@@ -4,7 +4,8 @@
             "name": "GCC",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${vcpkgRoot}/x64-windows/include"
+                "${vcpkgRoot}/x64-windows/include",
+                "C:/mingw64/include/python3.9"
             ],
             "defines": [
                 "_DEBUG",
