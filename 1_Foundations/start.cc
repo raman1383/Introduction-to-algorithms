@@ -2,7 +2,7 @@
 #include <thread>
 #include <vector>
 
-using std::cout, std::vector;
+using std::cout, std::vector, std::endl;
 
 void say()
 {
@@ -10,6 +10,12 @@ void say()
     {
         cout << i << " from threadObj -> Hello world ! \n";
     }
+}
+
+template <typename T>
+T myMax(T first, T second)
+{
+    return (first < second) ? second : first;
 }
 
 int main(int argc, char const *argv[])
@@ -38,5 +44,12 @@ int main(int argc, char const *argv[])
     std::thread threadObj2(pushInto, 23);
     threadObj.join();
     threadObj2.join();
+
+    cout << myMax<int>(3, 7) << endl;
+    cout << myMax<double>(3.0, 7.0)
+         << endl;
+    cout << myMax<char>('g', 'e')
+         << endl;
+
     cout << "Hello world ! \n";
 }
