@@ -3,8 +3,6 @@
 #include <iostream>
 #include <vector>
 
-#define INT_MAX 10000000
-
 using namespace std;
 
 void DijkstrasTest();
