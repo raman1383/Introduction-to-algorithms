@@ -8,6 +8,8 @@
                 "C:/mingw64/include/python3.9"
             ],
             "defines": [
+                "compilerArgs",
+                "compile_commands",
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
@@ -17,7 +19,10 @@
             "cStandard": "c17",
             "cppStandard": "c++20",
             "intelliSenseMode": "windows-gcc-x64",
-            "configurationProvider": "go2sh.cmake-integration"
+            "configurationProvider": "go2sh.cmake-integration",
+            "compilerArgs": [
+                "--std=c++2a"
+            ]
         }
     ],
     "version": 4

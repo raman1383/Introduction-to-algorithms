@@ -4,12 +4,13 @@ constexpr int MAX = 100;
 
 namespace lin
 {
-    void fucker()
+    auto fucker() -> void
     {
         for (int i = 0; i < MAX; i++)
         {
-            std::cout << "Lets fuck >>>" << std::endl;
+            std::cout << i << " >>  Lets fuck >>>" << std::endl;
         }
+        // fucker(); // recursion, resulting in infinite loop
     }
 
 } // namespace lin
