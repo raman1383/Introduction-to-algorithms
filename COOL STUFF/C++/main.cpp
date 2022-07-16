@@ -1,20 +1,10 @@
-#include "lin.hpp"
-using std::cout;
-constexpr int double_it(int arg) { return arg * arg; };
+#include <stdio.h>
 
-struct BeforeMain
+int main()
 {
-    BeforeMain()
+    int arr[9] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+    for (int i = 0; i < 9; i++)
     {
-        std::cout << "Constructing BeforeMain" << std::endl;
+        printf("%d\n", arr[i]);
     }
-};
-
-main()
-{
-    int bad_result = ((4 + 1) * (4 + 1));
-    cout << bad_result;
-    lin::fucker();
-    BeforeMain b;
-    return 0;
 }
