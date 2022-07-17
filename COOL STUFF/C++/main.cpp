@@ -6,4 +6,5 @@ int main()
     cout << biggest(765, 2) << endl;
     cout << biggest<int, float>(12, 33.98) << endl;
     cout << biggest('e', 2) << endl;
+    traits();
 }
