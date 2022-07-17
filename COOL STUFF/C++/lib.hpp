@@ -1,16 +1,10 @@
 #pragma once
 #include <iostream>
+#include <vector>
+using std::cout, std::endl, std::vector;
 
-class Musician
+template <typename T>
+T biggest(T first, T second)
 {
-private:
-public:
-    virtual void play() { std::cout << "play music ! "; }
-};
-
-class Guitarist : public Musician
-{
-private:
-public:
-    void play() override { std::cout << "paling music with guitar" << std::endl; }
-};
+    return (first < second) ? second : first;
+}
