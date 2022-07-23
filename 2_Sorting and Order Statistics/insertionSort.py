@@ -16,5 +16,4 @@ def insertionSort(array):
 
 data = [9, 5, 1, 4, 3]
 insertionSort(data)
-print('Sorted Array in Ascending Order:')
 print(data)
