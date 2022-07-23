@@ -1,4 +1,4 @@
-package Java;
+// package Java;
 // Dijkstra's Algorithm in Java
 
 public class Dijkstra {

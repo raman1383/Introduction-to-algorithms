@@ -1,3 +1,6 @@
+from random import randint
+
+
 class Car:
     """A simple attempt to represent a car."""
 
@@ -34,3 +37,13 @@ class ElectricCar(Car):
 
 my_tesla = ElectricCar('tesla', 'model s', 2019)
 print(my_tesla.get_descriptive_name())
+print(randint(1, 22))
+
+with open('COOL STUFF\\Python\\x.txt') as file_object:
+    contents = file_object.read()
+print(contents)
+
+
+filename = 'COOL STUFF\\Python\\programming.txt'
+with open(filename, 'w') as file_object:
+    file_object.write("I love programming.")
