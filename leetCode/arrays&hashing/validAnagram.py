@@ -1,4 +1,7 @@
 def isAnagram(s: str, t: str) -> bool:
+
+    # return sorted(s) == sorted(t)
+
     if len(s) != len(t):
         return False
 
@@ -13,7 +16,7 @@ def isAnagram(s: str, t: str) -> bool:
     return True
 
 
-s = "on"
-t = "no"
+s = "stwer"
+t = "stwer"
 
 print(isAnagram(s, t))
