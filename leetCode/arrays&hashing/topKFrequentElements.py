@@ -11,3 +11,8 @@ def topKFrequent(nums: list[int], k: int) -> list[int]:
             res.append(n)
             if len(res) == k:
                 return res
+
+
+nums = [1, 1, 1, 2, 2, 3, 3, 3, 3]
+k = 2
+print(topKFrequent(nums, k))
